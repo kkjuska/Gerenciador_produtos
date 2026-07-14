@@ -1,0 +1,213 @@
+{
+  "info": {
+    "_postman_id": "59262c77-4007-4bb5-9da4-8d59a18aae22",
+    "name": "Gerenciador_Produtos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GetAPI",
+      "id": "b57d5479-2e71-44d0-a576-8b609cace8ec",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetCategorias",
+      "id": "ef5bda46-0a7e-4d01-9df0-5992ce23ca63",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostCategorias",
+      "id": "a8c654f2-5732-45f5-aab3-d3f86d228c02",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"nome\": \"Informática\",\r\n\"descricao\": \"Produtos para computador\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/categorias",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "categorias"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PutCategorias",
+      "id": "5806f3aa-aa1a-4b43-bc0d-d79b4a7f70d0",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"nome\": \"Informática Atualizada\",\r\n\"descricao\": \"Produtos para computador\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/categorias/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "categorias",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteCategorias",
+      "id": "d54c1413-8e83-46ea-ab65-657b3fc87f09",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/categorias/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "categorias",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetProdutos",
+      "id": "573f60b6-1300-4064-ac9c-f8fbd6533ab1",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostProdutos",
+      "id": "957890d0-c678-40b0-81e0-8788bef77836",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"nome\": \"Teclado Mecânico\",\r\n\"preco\": 199.90,\r\n\"quantidade\": 8,\r\n\"categoria\": \"Informática\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/produtos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "produtos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PutProdutos",
+      "id": "b4587d95-8e52-42f8-bf9c-847202ad29e3",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"nome\": \"Teclado Mecânico Atualizado\",\r\n\"preco\": 199.90,\r\n\"quantidade\": 8,\r\n\"categoria\": \"Informática\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/produtos/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "produtos",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteProdutos",
+      "id": "fff6dc13-6570-4bd6-a965-b9a0075baabc",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/produtos/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "produtos",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
